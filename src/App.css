@@ -3,9 +3,7 @@
   display: flex;
   justify-content: center;
 }
-.card{
-  background-color: pink;
-}
+
 .BigBox{
   width: 800px;
   margin: auto;
@@ -14,3 +12,86 @@
   color: aquamarine;
 }
 
+.findOutMore{
+  display: flex;
+  align-items: center;
+}
+.newMenuContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.newMenuBox{
+  display: flex;
+}
+.newMenuMiniBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 40px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+.moreLink:hover{
+  cursor: pointer;
+  color: #ffcc53;
+}
+.newMenuContainerText{
+color: #1c224b;
+font-family: 'DM Sans', sans-serif;
+}
+.itemName{
+  font-family: 'DM Sans', sans-serif;
+  color: #1c224b;
+}
+.menuArrowTwo{
+  border-radius: 50%;
+  width: 1.7rem;
+  height: 1.7rem;
+  cursor: pointer;
+}
+.menuArrowTwo:hover{
+  background-color: #1c224b;
+  color: #fff9eb;
+}
+.slidemenu{
+  transition: all 1s ease;
+}
+.currentmenu{
+  opacity: 1;
+  transform: translateX(0);
+}
+.slick-next::before{
+  color: #1c224b !important;
+  font-size: 40px !important;
+  background-color: none !important;
+}
+.slick-prev::before{
+  color: #1c224b !important;
+  font-size: 40px !important;
+  background-color: none !important;
+}
+img{
+width: 100px;
+}
+
+/* .slick-next,
+.slick-prev {
+  padding: 14px;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    border: none;
+    border-radius: 5vw;
+    background-color: black;
+    z-index: 99 !important;
+    box-shadow: rgba(29, 59, 230, 0.269) 0px 0px 20px 5px;
+    top: 40%;
+    &:hover{
+    background-color:#fff;
+    }
+} */
