@@ -34,7 +34,7 @@ const NewMenuContainer = () => {
     },[currentSlide])
 
 //   const index = slide.index;
-//   id.splice=(0-3)
+//   index.splice=(0-3)
 
     return (
         <div className="newMenuContainer">
