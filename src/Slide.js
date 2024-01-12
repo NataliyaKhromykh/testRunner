@@ -11,6 +11,7 @@ const NewMenuContainer = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const slideLength = NewMenuContainerData.length;
 
+
     const autoScroll = true;
     let slideInterval;
     let intervalTime = 5000;
