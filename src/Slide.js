@@ -34,8 +34,7 @@ const NewMenuContainer = () => {
         return () => clearInterval(slideInterval);
     },[currentSlide])
 
-//   const index = slide.index;
-//   index.splice=(0-3)
+
 
     return (
         <div className="newMenuContainer">
