@@ -40,9 +40,11 @@ const NewMenuContainer = () => {
         <div className="newMenuContainer">
         <AiOutlineArrowLeft className="menuArrowTwo prev" onClick={prevSlide}/>
             <div>
+
                 <div className="container">
                 <h1 className="newMenuContainerText">New this week:</h1>
                 </div>
+                
                 <div className="ourNewMenuSlider">
                 {NewMenuContainerData.map((slide, index) => {
                     return (
