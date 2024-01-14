@@ -3,6 +3,9 @@ import './App.css';
 import {AiOutlineArrowLeft} from "react-icons/ai";
 import {AiOutlineArrowRight} from "react-icons/ai";
 import { NewMenuContainerData } from "./NewMenuContainer-data";
+import gsap from 'gsap';
+
+
 
 
 
@@ -32,7 +35,25 @@ const NewMenuContainer = () => {
             auto()
         }
         return () => clearInterval(slideInterval);
-    },[currentSlide])
+    },[currentSlide]);
+
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+      }, []);
+
+    useEffect(() => {
+        if (isMounted) {
+            gsap.from('.newMenuContainerText', {x: '50%', opacity: 0, duration: 4, delay: 0.5 });
+          };
+        }, [isMounted]);
+        useEffect(() => {
+            if (isMounted) {
+                gsap.from('.menuArrowTwo', {opacity: 0, duration: 4, delay: 0.5 });
+              };
+            }, [isMounted]);
+  
 
 
 
