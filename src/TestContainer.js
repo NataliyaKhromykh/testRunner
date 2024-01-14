@@ -7,7 +7,7 @@ const Carousel = () =>{
     const AllCards = NewMenuContainerData;
 
 
-    const [card, setCard] = useState(AllCards.slice(0,3));
+    const [card, setCard] = useState([...AllCards].splice(0,3));
 
     return (
         <div className="newMenuContainer">
